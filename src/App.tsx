@@ -2,10 +2,10 @@ import { useCallback, useMemo, useRef, useState } from 'react'
 import {Layer, Map, Source, type LayerProps, type MapGeoJSONFeature, type MapLayerMouseEvent, type MapRef} from '@vis.gl/react-maplibre';
 import { Chart as ChartJS, ArcElement, BarElement, CategoryScale, Legend as LegendChart, LinearScale, Title, Tooltip, type ChartOptions } from "chart.js";
 import { Bar } from "react-chartjs-2";
-import 'maplibre-gl/dist/maplibre-gl.css';
 import Swicth from '@mui/material/Switch'
-import './App.css'
 import { Legend } from './Legend';
+import './App.css'
+import 'maplibre-gl/dist/maplibre-gl.css';
 
 const apiKey = import.meta.env.VITE_API_KEY;
 
