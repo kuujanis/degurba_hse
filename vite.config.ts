@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['/maplibre-gl/dist/maplibre-gl.css']
+      external: ['maplibre-gl/dist/maplibre-gl.css']
     }
   }
 })

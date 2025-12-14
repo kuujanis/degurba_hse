@@ -5,7 +5,8 @@ import { Bar } from "react-chartjs-2";
 import Swicth from '@mui/material/Switch'
 import { Legend } from './Legend';
 import './App.css'
-// import '/maplibre-gl/dist/maplibre-gl.css';
+import 'maplibre-gl/dist/maplibre-gl.css';
+import { InfoSection } from './Info';
 
 const apiKey = import.meta.env.VITE_API_KEY;
 
@@ -325,15 +326,7 @@ const App = () => {
           </div>
         </div>}
         {!selectedMun && !selectedReg && 
-          <div style={{padding: '20px', color: 'white'}}>
-            <h2>DegUrba Russia</h2>
-            <p>
-              DEGURBA (Degree of Urbanisation) — методика оценки уровня урбанизированности территорий. Разработана консорциумом в составе шести организаций, включая Европейскую комиссию, ОЭСР, институты системы ООН и Всемирный банк. В 2020 г. рекомендована статистической комиссией ООН в качестве  инструмента гармонизации международной статистики в области урбанизации.
-            </p>
-            <p>
-              DEGURBA основана на сопоставлении территорий по плотности населения, представленной по ячейкам сетки размером 1 км, и включает два уровня детализации. На первом уровне выделяется три класса территорий: города (cities), малые города и средне-плотные территории (towns and semi-dense areas) и сельские территории (rural areas). На втором уровне малые города и средне-плотные территории и сельские территории дополнительно разбиваются на подклассы.
-            </p>
-          </div>
+          <InfoSection/>
 
         }
         
@@ -345,7 +338,7 @@ const App = () => {
             latitude: 55.7,
             zoom: 5,
           }}
-          style={{position: 'relative',width: '65%', height: '100%', transition: 'width 0.5s ease'}}
+          style={{position: 'relative',width: '65%', height: '100%', transition: 'width 0.5s ease', flex: 1}}
           mapStyle={`https://api.maptiler.com/maps/f40a1280-834e-43de-b7ea-919faa734af4/style.json?key=${apiKey}`}
           interactiveLayerIds={['municipal','region','cell']}
           onClick={handleClick}

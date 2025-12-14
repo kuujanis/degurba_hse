@@ -5,6 +5,7 @@
   flex-direction: row;
 }
 .info-panel {
+  flex-shrink: 0;
   width: 35%;
   height: 100%;
   display: flex;
