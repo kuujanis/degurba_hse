@@ -5,9 +5,8 @@ import { Bar } from "react-chartjs-2";
 import Swicth from '@mui/material/Switch'
 import { Legend } from './Legend';
 import './App.css'
-import 'maplibre-gl/dist/maplibre-gl.css';
+import '/maplibre-gl/dist/maplibre-gl.css';
 import { InfoSection } from './Info';
-
 const apiKey = import.meta.env.VITE_API_KEY;
 
 const App = () => {
@@ -360,7 +359,7 @@ const App = () => {
         <Source id='background' type='vector' tiles={["http://127.0.01:3002/degurba_russia_2021_l2_regions_3857/{z}/{x}/{y}"]}>
           <Layer {...backgroundLayer}/>
         </Source>
-        <Source id='cell' type='vector' tiles={["http://127.0.0.1:3002/degurba_russia_2021_l1_l2_3857/{z}/{x}/{y}"]}>
+        <Source id='cell' type='vector' tiles={["http://gradlab.tech:3002/degurba_russia_2021_l1_l2_3857/{z}/{x}/{y}"]}>
               <Layer {...cellLayer}/>
               <Layer {...cellHighlight}/>
         </Source>
