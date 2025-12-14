@@ -5,7 +5,7 @@ import { Bar } from "react-chartjs-2";
 import Swicth from '@mui/material/Switch'
 import { Legend } from './Legend';
 import './App.css'
-import '/maplibre-gl/dist/maplibre-gl.css';
+// import '/maplibre-gl/dist/maplibre-gl.css';
 
 const apiKey = import.meta.env.VITE_API_KEY;
 
