@@ -270,7 +270,7 @@ const App = () => {
     
     if (mapRef.current) {
       if (e.features) {
-      e.features.map((feature) => {
+      e.features.map((feature:MapGeoJSONFeature) => {
         switch(feature.layer.id) {
           case 'cell':
             setSelectedCell(feature)
