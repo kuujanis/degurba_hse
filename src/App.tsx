@@ -359,7 +359,7 @@ const App = () => {
         <Source id='background' type='vector' tiles={["http://127.0.01:3002/degurba_russia_2021_l2_regions_3857/{z}/{x}/{y}"]}>
           <Layer {...backgroundLayer}/>
         </Source>
-        <Source id='cell' type='vector' tiles={["http://gradlab.tech:3002/degurba_russia_2021_l1_l2_3857/{z}/{x}/{y}"]}>
+        <Source id='cell' type='vector' tiles={["https://gradlab.tech/tiles/degurba_russia_2021_l1_l2_3857/{z}/{x}/{y}"]}>
               <Layer {...cellLayer}/>
               <Layer {...cellHighlight}/>
         </Source>
