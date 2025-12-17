@@ -21,6 +21,7 @@
 .scroll-section {
     flex: 1;
     overflow-y: scroll;
+    background-color: #000f4b;
 }
 .info-refs {
     flex-shrink: 0;
@@ -28,7 +29,7 @@
 }
 
 .scroll-section span {
-  color: #000000;
+  color: #000d40;
   border-radius: 8px;
   padding: 0.1em 0.4em;
   display: inline-block;
@@ -39,7 +40,7 @@
 
 * {
   scrollbar-width: thin; /* Firefox */
-  scrollbar-color: #424242 #1c1c1c; /* Firefox: thumb and track */
+  scrollbar-color:#051b74  #000f4b ; /* Firefox: thumb and track */
 }
 
 /* Webkit browsers (Chrome, Safari, Edge) */
@@ -49,14 +50,13 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #272727; /* Dark gray track */
+  background: #000f4b; /* Dark gray track */
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #383838; /* Medium gray thumb */
+  background: #001466; /* Medium gray thumb */
   border-radius: 4px;
-  border: 1px solid #222325;
 }
 
 ::-webkit-scrollbar-thumb:hover {

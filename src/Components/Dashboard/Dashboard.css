@@ -1,0 +1,31 @@
+.cell-panel {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    gap: 50px;  
+}
+.cell-stat-column {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    color: rgb(210, 210, 210);
+    font-weight: 900;
+    font-size: 1rem;
+    gap: 10px;
+}
+.cell-stat-column span {
+  color: #000d40;
+  border-radius: 8px;
+  padding: 0.1em 0.4em;
+  display: inline-block;
+  line-height: 1.4;
+  font-weight: 700;
+  margin-left: 6px;
+}
+.stat-title {
+  color: rgb(210, 210, 210);
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}

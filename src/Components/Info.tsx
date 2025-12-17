@@ -78,7 +78,7 @@ export const InfoSection = () => {
             <div className='info-refs'>
                 <p>
                     Проект выполнен научно-учебной группой
-                    <a href={'https://geography.hse.ru/nug/'}>
+                    <a href={'https://geography.hse.ru/nug/'} style={{margin: '0px 10px'}}>
                         “Пространственный анализ и моделирование городских процессов”
                     </a> 
                     факультета географии и геоинформационных технологий НИУ ВШЭ.
